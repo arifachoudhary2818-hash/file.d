@@ -30,3 +30,625 @@
   <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujala Spring - Industrial Spring Manufacturer in Ghaziabad | Compression Springs | Custom Springs</title>
+    <meta name="description" content="Ujala Spring - Leading Spring Manufacturer in Ghaziabad since 2010. Compression Springs, Coil Springs, Leaf Springs, Die Springs, Custom Industrial Springs. Fast Delivery in NCR.">
+    <meta name="keywords" content="Industrial Spring Manufacturer, Spring Supplier Ghaziabad, Compression Springs, Custom Springs, Coil Spring Factory, Die Spring Manufacturers, Heavy Duty Springs, Spring Coil Dealers, NCR Spring Manufacturer, Masuri Ghaziabad Spring Factory">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --maroon: #5C0000;
+            --brown: #7A5A45;
+            --beige: #E8DCCF;
+            --navy: #0E1F34;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--navy);
+            color: var(--beige);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--beige);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-size: 14px;
+            flex-wrap: wrap;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background: var(--maroon);
+            color: var(--beige);
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #7a0000;
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #20b858;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--maroon) 0%, var(--navy) 100%);
+            color: var(--beige);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .hero .subtitle {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: var(--beige);
+        }
+
+        .hero .tagline {
+            font-size: 16px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            background: var(--beige);
+        }
+
+        .about h2 {
+            font-size: 36px;
+            color: var(--maroon);
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            background: white;
+            padding: 30px;
+            border-left: 5px solid var(--maroon);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .about-text h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .about-text p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .keywords {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid var(--brown);
+            font-size: 14px;
+            color: var(--maroon);
+            font-weight: bold;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .products h2 {
+            font-size: 36px;
+            color: var(--maroon);
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: var(--beige);
+            padding: 30px;
+            border-radius: 8px;
+            border: 3px solid var(--brown);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(92,0,0,0.2);
+        }
+
+        .product-card h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            padding: 60px 20px;
+            background: var(--navy);
+            color: var(--beige);
+        }
+
+        .why-choose h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--maroon);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--beige);
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 60px 20px;
+            background: var(--beige);
+        }
+
+        .gallery h2 {
+            font-size: 36px;
+            color: var(--maroon);
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: var(--brown);
+            height: 250px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--beige);
+            font-size: 18px;
+            font-weight: bold;
+            border: 3px solid var(--navy);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            color: var(--maroon);
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info-box {
+            background: var(--beige);
+            padding: 40px;
+            border-radius: 8px;
+            border: 3px solid var(--brown);
+        }
+
+        .contact-info-box h3 {
+            color: var(--navy);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contact-detail {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .contact-detail strong {
+            color: var(--maroon);
+        }
+
+        .map-container {
+            background: var(--brown);
+            height: 400px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--beige);
+            font-size: 18px;
+            border: 3px solid var(--navy);
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--beige);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Sticky Mobile Buttons */
+        .sticky-mobile {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            gap: 0;
+            z-index: 999;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+        }
+
+        .sticky-mobile .btn {
+            flex: 1;
+            border-radius: 0;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero .subtitle {
+                font-size: 18px;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .sticky-mobile {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Ujala Spring</div>
+                <div class="contact-info">
+                    <span>📞 +91 98912 09820</span>
+                    <span>✉️ ujalaSpring@gmail.com</span>
+                </div>
+                <div class="header-buttons">
+                    <a href="tel:+919891209820" class="btn">Call Now</a>
+                    <a href="https://wa.me/919891209820" class="btn btn-whatsapp">WhatsApp</a>
+                    <a href="#contact" class="btn">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Ujala Spring</h1>
+            <div class="subtitle">Precision • Strength • Reliability</div>
+            <div class="subtitle" style="font-size: 18px; margin-top: 10px;">मजबूत, भरोसेमंद, High-Quality Springs</div>
+            <p class="tagline">Industrial Spring Manufacturer | Compression Springs | Coil Springs | Leaf Springs | Die Springs | Custom Springs</p>
+            <div class="hero-buttons">
+                <a href="tel:+919891209820" class="btn">Call Now</a>
+                <a href="https://wa.me/919891209820" class="btn btn-whatsapp">WhatsApp Now</a>
+                <a href="#contact" class="btn">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Ujala Spring</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>English</h3>
+                    <p>Ujala Spring is a leading Spring Manufacturer in Ghaziabad. Since 2010, we make high-quality Compression Springs, Coil Springs, Leaf Springs, Die Springs and Custom Industrial Springs for factories, workshops and automotive industries.</p>
+                    <div class="keywords">
+                        Industrial Spring Supplier • Custom Spring Maker • Heavy-Duty Springs • Ghaziabad Spring Factory
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>हिंदी</h3>
+                    <p>Ujala Spring, Ghaziabad का एक विश्वसनीय Spring Manufacturer है। हम 2010 से high-quality industrial springs बनाते हैं — Compression, Coil, Leaf, Die और Custom Springs।</p>
+                    <div class="keywords">
+                        मजबूत क्वालिटी • सही साइज़, सही टेंशन • जल्दी डिलीवरी • कस्टम ऑर्डर
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Our Products & Services</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3>Spring Manufacturers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Leaf Spring Manufacturers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Spring Coil Manufacturers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Industrial Spring Manufacturers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Spring Coil Dealers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Die Spring Manufacturers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Zig Zag Spring Manufacturers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Compression Spring Manufacturers</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Custom Spring Fabrication</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+                <div class="product-card">
+                    <h3>Heavy-Duty Industrial Springs</h3>
+                    <a href="#contact" class="btn" style="margin-top: 15px;">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Choose Ujala Spring?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Strong Material, High Durability</h3>
+                    <p>मजबूत क्वालिटी</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Accurate Size & High Precision</h3>
+                    <p>सही साइज़, सही टेंशन</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Bulk Orders Accepted</h3>
+                    <p>बल्क ऑर्डर स्वीकार</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fast Delivery in NCR</h3>
+                    <p>जल्दी डिलीवरी</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom Springs Available</h3>
+                    <p>कस्टम ऑर्डर उपलब्ध</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>Our Manufacturing Process</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">Compression Springs</div>
+                <div class="gallery-item">Coil Springs</div>
+                <div class="gallery-item">Leaf Springs</div>
+                <div class="gallery-item">Die Springs</div>
+                <div class="gallery-item">Manufacturing Unit</div>
+                <div class="gallery-item">Quality Testing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact & Location</h2>
+            <div class="contact-content">
+                <div class="contact-info-box">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-detail">
+                        <strong>Phone:</strong> +91 98912 09820
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Email:</strong> ujalaSpring@gmail.com
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Address:</strong> Masuri, Piplehda Area, Ghaziabad (NCR)
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="tel:+919891209820" class="btn">Call Now</a>
+                        <a href="https://wa.me/919891209820" class="btn btn-whatsapp">WhatsApp Now</a>
+                        <a href="https://maps.google.com/?q=Masuri+Piplehda+Ghaziabad" target="_blank" class="btn">Get Directions</a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14005.234567890123!2d77.5!3d28.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQ4JzAwLjAiTiA3N8KwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="100%" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>Ujala Spring</strong> - Industrial Spring Manufacturer in Ghaziabad</p>
+            <p>Compression Springs | Coil Springs | Leaf Springs | Die Springs | Custom Springs</p>
+            <p>Masuri, Piplehda Area, Ghaziabad (NCR) | Phone: +91 98912 09820</p>
+            <p>&copy; 2010-2024 Ujala Spring. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Buttons -->
+    <div class="sticky-mobile">
+        <a href="tel:+919891209820" class="btn">📞 Call Now</a>
+        <a href="https://wa.me/919891209820" class="btn btn-whatsapp">💬 WhatsApp</a>
+    </div>
+</body>
+</html>
+
